@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CMRIT - Attendance Manager</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Change Criteria</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="attendance_criteria">Attendance Criteria</string>
+    <string name="required_percentage">You are on track!!</string>
+</resources>

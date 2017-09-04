@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="HardcodedText">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/attendance_fragment"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/internal_fragment"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Internal Marks" />
+        <item
+            android:id="@+id/go_to_date"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Go To Date" />
+        <!--<item-->
+            <!--android:id="@+id/log_out"-->
+            <!--android:icon="@drawable/ic_power_settings_new_black_24dp"-->
+            <!--android:title="Logout" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_grade_black_24dp"
+                android:title="Rate" />
+        </menu>
+    </item>
+
+</menu>

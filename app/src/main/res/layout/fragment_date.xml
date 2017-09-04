@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/fd_dateorerror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#222222"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:id="@+id/lldf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fd_dateorerror"
+        android:layout_margin="4dp">
+        <TextView
+            android:id="@+id/rd_subject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#222222"
+            android:textAlignment="center"
+            android:text="Subject" />
+        <TextView
+            android:id="@+id/rd_attendance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#222222"
+            android:textAlignment="center"
+            android:text="Attendance" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/date_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lldf"
+        android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/date_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

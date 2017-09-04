@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#29B6F6</color>-->
+    <!--<color name="colorPrimaryDark">#03A9F4</color>-->
+    <!--<color name="colorAccent">#FFC107</color>-->
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF6D00</color>
+    <!--LoginThemeColors-->
+    <color name="loginPrimary">#673AB7</color>
+    <color name="loginPrimaryDark">#5E35B1</color>
+    <color name="loginAccent">#FF5722</color>
+    <color name="actionbarBackground">#03A9F4</color>
+    <color name="actionBarText">#000000</color>
+    <color name="colorFab">#FFFFFF</color>
+</resources>

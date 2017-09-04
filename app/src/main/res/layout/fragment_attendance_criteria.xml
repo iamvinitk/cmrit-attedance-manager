@@ -1,0 +1,85 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#37474F">
+<android.support.v7.widget.CardView
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="120dp"
+    android:layout_marginLeft="10dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="2dp"
+    android:id="@+id/cardView">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:hint="@string/attendance_criteria"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#DEDEDE"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fac_percentage"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#717171"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95%"
+                android:layout_centerHorizontal="true" />
+            <com.appyvet.rangebar.RangeBar
+                android:id="@+id/fac_rangebar"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                card_view:rangeBarColor="@color/loginAccent"
+                card_view:pinColor="@color/loginAccent"
+                card_view:selectorColor="@color/loginAccent"
+                card_view:connectingLineColor="@color/loginAccent"
+                card_view:tickColor="@color/loginAccent"
+                card_view:tickStart="0.0"
+                card_view:tickEnd="95.0"
+                card_view:tickInterval="5.0"
+                card_view:barWeight="1.5dp"
+                card_view:rangeBar="false"
+                card_view:connectingLineWeight="2dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/fac_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_done_black_64dp_1x"
+        android:tint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/cardView"
+        android:layout_marginEnd="25dp" />
+
+</RelativeLayout>
